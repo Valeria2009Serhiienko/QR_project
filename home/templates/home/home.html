@@ -1,9 +1,95 @@
 {% extends 'base.html' %}
+{% load static %}
+
+{% block link %}
+    <link rel="stylesheet" href='static/home/css/home.css'>
+{% endblock %}
 
 {% block title %}
-    Digital QR
+    Home page | Digital QR
 {% endblock %}
 
 {% block content %}
-    <h1>Привіт</h1>
+    <header>
+        <nav>
+            <ul class="header_list">
+                <li>
+                    <img class="logo" src="static/images/logo1.png" alt="logo">
+                </li>
+                <li>Digital QR</li>
+                <a class="header_contact" href="{% url 'contact' %}">Contact</a>
+                <a class="header_link" href="{% url 'authorization' %}">Log In</a>
+                <a class="header_link" href="{% url 'registration' %}">Sign Up</a>
+            </ul>
+        </nav>
+        
+        </header>
+    <main> 
+        <h1>Create your QR codes easy!</h1>
+        <p class="first_p">Follow this three simple steps to create your QR code </p>
+        <ul>
+            <li>
+                <div class="doc">
+                    <img class="icon" src="static/images/doc_2.svg" alt="">
+                </div>
+                <h4>Choose content for your QR code</h4>
+                <p>
+                    Select what you'd like to share - URLs, videos, apps, and more!
+                </p>
+            </li>
+            <li>
+                <div class="pen">
+                    <img class="icon" src="static/images/pen3.svg" alt="">
+                </div>
+                <h4>Customize and design your QR</h4>
+                <p>
+                Tailor your QR code’s color, shape, and style to create a distinctive design that reflects your brand!
+                </p>
+            </li>
+            <li>
+                <div class="print">
+                    <img class="icon" src="static/images/print_1.svg" alt="">
+                </div>
+                <h4>Customize and design your QR</h4>
+                <p> 
+                    Download your QR code in PNG, SVG, JPG, or EPS format. Print it or share it online!</li>
+                </p>
+        </ul>
+        <a class="generate" href="">Generate QR</a>
+        <h1 class="plan_choice">Choose your plan</h1>
+        <p class="second_p">Choose your plan to continue creating your QR! </p>
+        <ul>
+            <li class="FREE">
+                <h3>FREE</h3>
+                <h5>0$/Month</h5>
+                <p>Any type of content.</p>
+                <p>Create  your own design!</p>
+                <p>Download your QR code <br>in any format.</p>
+                <p>Up to 1 QR code per 6 month. </p>
+            </li>
+            <li class="STANDART">
+                <h3>STANDART</h3>
+                <h5>2$/Month</h5>
+                <p>Any type of content.</p>
+                <p>Create your own design!</p>
+                <p>Download your QR code in any format.</p>
+                <p>10 QR codes.</p>
+            </li>
+            <li class="PRO">
+                <h3>PRO</h3>
+                <h5>10$/Month</h5>
+                <p>Any type of content.</p>
+                <p>Create  your own design!</p>
+                <p>Download your QR code in any format.</p>
+                <p>100 QR codes</p>
+            </li>
+        </ul>
+    </main>
+    <footer>
+        <h2>Digital QR</h2>
+        <p>Ivan Akinfieva Street, 18, Dnipropetrovsk, Ukraine, 49009</p>
+        <p>nick20122044@gmail.com</p>
+        <p>+380935023997</p>
+    </footer>
+    </body>
 {%  endblock %}

@@ -1,0 +1,60 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block link %}
+    <link rel="stylesheet" href=''>
+{% endblock %}
+
+{% block title %}
+    Log In | Digital QR
+{% endblock %}
+
+{% block content %}
+    </head>
+    <body>
+        <header>
+            <ul>
+                <li>
+                    <img src="static/images/logo1.png" alt="logo">
+                </li>
+                <li>Digital QR</li>
+            </ul>
+        </header>
+        
+        <main>
+            <h1>Log in to your account</h1>
+            <div class="email_input">
+                <img src="static/images/email_icon.png" alt="email">
+                <input type="email" placeholder="name@gmail.com">
+            </div>
+        
+            <div class="password_input">
+                <img src="static/images/password_icon.png" alt="password">
+                <input type="email" placeholder="name@gmail.com">
+            </div>
+
+            <a href="" class="create_button">Log in</a>
+            <p>Don't have an account?<a href="{% url 'registration' %}">Create an account</a></p>
+
+            <h1 class="or">OR</h1>
+
+            <ul>
+                <li>
+                    <a href="">
+                        <img src="static/images/google_icon.svg" alt="google">
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="static/images/apple_icon.svg" alt="apple">
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="static/images/facebook_icon.svg" alt="facebook">
+                    </a>
+                </li>
+            </ul>
+        </main>
+    </body>
+{% endblock %}

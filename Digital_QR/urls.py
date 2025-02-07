@@ -22,5 +22,7 @@ urlpatterns = [
     path('', include('home.urls')),
     path('auth/', include('authorization.urls')),
     path('registration/', include('registration.urls')),
-    path('contact/', include('contact.urls') )
+    path('contact/', include('contact.urls') ),
+    path('qr_types/', include('qr_types.urls')),
+    path('setting_qr/', include('setting_qr.urls'))
 ]

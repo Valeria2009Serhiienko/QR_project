@@ -40,7 +40,9 @@ INSTALLED_APPS = [
     'home',
     'authorization',
     'registration',
-    'contact'
+    'contact',
+    'qr_types',
+    'setting_qr'
 ]
 
 MIDDLEWARE = [

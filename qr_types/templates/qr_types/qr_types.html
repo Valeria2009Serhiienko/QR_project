@@ -1,0 +1,65 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block link %}
+    <link rel="stylesheet" href='static/home/css/home.css'>
+{% endblock %}
+
+{% block title %}
+    Select QR Type | Digital QR
+{% endblock %}
+
+{% block content %}
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>QR types page</title>
+        </head>
+        <body>
+            <header>
+                <nav>
+                    <ul class="header_list">
+                        <li>
+                            <img src="images/logo.jpg" alt="logo">
+                        </li>
+                        <li>Digital QR</li>
+                        <a class="header_link" href="">Log In</a>
+                        <a class="header_link_2" href="">Sign Up</a>
+                    </ul>
+                </nav> 
+            </header>
+
+            <main>
+                <h1>Select the QR code type</h1>
+                <ul>
+                    <li>
+                        <a href=""><img src="images/website_icon.svg" alt="">Website</a>
+                    </li>
+                    <li>
+                        <a href=""><img src="images/pdf_icon.svg" alt="">PDF</a>
+                    </li>
+                    <li>
+                        <a href=""><img src="images/inst_icon.svg" alt="">Instagram</a>
+                    </li>
+                    <li>
+                        <a href=""><img src="images/mp3_icon.svg" alt="">MP3</a>
+                    </li>
+                    <li>
+                        <a href=""><img src="images/video_icon.svg" alt="">Video</a>
+                    </li>
+                    <li>
+                        <a href=""><img src="images/facebook_icon.svg" alt="">Facebook</a>
+                    </li>
+                    <li>
+                        <a href=""><img src="images/wifi_icon.svg" alt="">WiFi</a>
+                    </li>
+                    <li>
+                        <a href=""><img src="images/images_icon.svg" alt="">Images</a>
+                    </li>
+                </ul>
+            </main>
+            
+        </body>
+    </html>
+{% endblock %}

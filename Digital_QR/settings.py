@@ -129,8 +129,12 @@ STATIC_URL = 'static/'
 
 STATICFILES_DIRS = [
     BASE_DIR / 'static',
-    BASE_DIR / 'home' / 'static'
-    
+    BASE_DIR / 'home' / 'static',
+    BASE_DIR / 'authorization' / 'static',
+    BASE_DIR / 'contact' / 'static',
+    BASE_DIR / 'qr_types' / 'static',
+    BASE_DIR / 'registration' / 'static',
+    BASE_DIR / 'settings_qr' / 'static',
 ]
 
 # Default primary key field type

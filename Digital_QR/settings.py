@@ -63,6 +63,11 @@ TEMPLATES = [
         'DIRS': [
             BASE_DIR / 'templates',
             BASE_DIR / 'home' / 'templates',
+            BASE_DIR / 'registration' / 'templates',
+            BASE_DIR / 'authorization' / 'templates',
+            BASE_DIR / 'contact' / 'templates',
+            BASE_DIR / 'settings_qr' / 'templates',
+            BASE_DIR / 'qr_types' / 'templates',
         ],
 
         'APP_DIRS': True,

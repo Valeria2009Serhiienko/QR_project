@@ -12,49 +12,53 @@
 {% block content %}
     <body>
         <header>
-            <ul>
-                <li>
-                    <img src="images/logo1.png" alt="logo">
-                </li>
-                <li>Digital QR</li>
-            </ul>
+            <div class="header">
+                <ul>
+                    <li>
+                        <img src="images/logo1.png" alt="logo">
+                    </li>
+                    <li>Digital QR</li>
+                </ul>
+            </div>
         </header>
         
-        <main>
-            <h1>Create your account</h1>
-            <div class="email_input">
-                <img src="static/images/email_icon.png" alt="email">
-                <input type="email" placeholder="name@gmail.com">
-            </div>
-        
-            <div class="password_input">
-                <img src="static/images/password_icon.png" alt="password">
-                <input type="email" placeholder="name@gmail.com">
-            </div>
-            <a href="" class="create_button">Create account</a>
-            <p>Already have an account?<a href="{% url 'authorization' %}">Click here</a></p>
-                
-            <h1 class="or">OR</h1>
+        <div>
+            <main>
+                <h1>Create your account</h1>
+                <div class="email_input">
+                    <img src="static/images/email_icon.png" alt="email">
+                    <input type="email" placeholder="name@gmail.com">
+                </div>
+            
+                <div class="password_input">
+                    <img src="static/images/password_icon.png" alt="password">
+                    <input type="email" placeholder="name@gmail.com">
+                </div>
+                <a href="" class="create_button">Create account</a>
+                <p>Already have an account?<a href="{% url 'authorization' %}">Click here</a></p>
+                    
+                <h1 class="or">OR</h1>
 
-            <ul>
-                <li>
-                    <a href="">
-                        <img src="static/images/google_icon.svg" alt="google">
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <img src="static/images/apple_icon.svg" alt="apple">
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <img src="static/images/facebook_icon.svg" alt="facebook">
-                    </a>
-                </li>
-            </ul>
+                <ul>
+                    <li>
+                        <a href="">
+                            <img src="static/images/google_icon.svg" alt="google">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="static/images/apple_icon.svg" alt="apple">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="static/images/facebook_icon.svg" alt="facebook">
+                        </a>
+                    </li>
+                </ul>
 
-            <p>By creating an account, you consent that you have read and agree to our <a href="">terms of use and contracting</a> and the <a href="">privacy policy</a>.</p>
-        </main>
+                <p>By creating an account, you consent that you have read and agree to our <a href="">terms of use and contracting</a> and the <a href="">privacy policy</a>.</p>
+            </main>
+        </div>
     </body>
 {% endblock %}

@@ -1,64 +1,18 @@
 {% extends 'base.html' %}
-{% load static %}
-
-{% block link %}
-    <link rel="stylesheet" href='static/home/css/home.css'>
-{% endblock %}
 
 {% block title %}
-    Sign Up | Digital QR
+    Registraton
 {% endblock %}
 
 {% block content %}
-    <body>
-        <header>
-            <div class="header">
-                <ul>
-                    <li>
-                        <img src="images/logo1.png" alt="logo">
-                    </li>
-                    <li>Digital QR</li>
-                </ul>
-            </div>
-        </header>
+    <form action= "" method= "post" enctype= "multipart/form-data">
+        {% csrf_token %}
         
-        <div>
-            <main>
-                <h1>Create your account</h1>
-                <div class="email_input">
-                    <img src="static/images/email_icon.png" alt="email">
-                    <input type="email" placeholder="name@gmail.com">
-                </div>
-            
-                <div class="password_input">
-                    <img src="static/images/password_icon.png" alt="password">
-                    <input type="email" placeholder="name@gmail.com">
-                </div>
-                <a href="" class="create_button">Create account</a>
-                <p>Already have an account?<a href="{% url 'authorization' %}">Click here</a></p>
-                    
-                <h1 class="or">OR</h1>
-
-                <ul>
-                    <li>
-                        <a href="">
-                            <img src="static/images/google_icon.svg" alt="google">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            <img src="static/images/apple_icon.svg" alt="apple">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            <img src="static/images/facebook_icon.svg" alt="facebook">
-                        </a>
-                    </li>
-                </ul>
-
-                <p>By creating an account, you consent that you have read and agree to our <a href="">terms of use and contracting</a> and the <a href="">privacy policy</a>.</p>
-            </main>
-        </div>
-    </body>
+        {% for field in form %}
+            <div>
+                <label for='{{ field.id_for_label }}'> {{ field.label }} </label>
+                {{ field }}
+            </div>
+        {% endfor %}
+        <button type= 'submit'>Create Account</button>
 {% endblock %}
